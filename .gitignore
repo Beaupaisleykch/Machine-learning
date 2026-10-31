@@ -1,0 +1,49 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.venv/
+venv/
+.env
+.envrc
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+profile_default/
+
+# ---- 数据与模型：不进 git ----
+data/*
+models/*
+!data/README.md
+!models/README.md
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+
+# ---- 产出 ----
+reports/*.png
+reports/*.html
+reports/*.pdf
+!reports/README.md
+
+# ---- 系统与编辑器 ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---- 自己的实验草稿 ----
+scratch/
+tmp/

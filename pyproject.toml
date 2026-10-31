@@ -1,0 +1,35 @@
+[project]
+name = "ml-practice"
+version = "0.1.0"
+description = "Python 机器学习练习记录"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyterlab",
+    "ipykernel",
+    "torch",
+    "pandas-stubs~=3.1.0",
+]
+
+[tool.uv]
+package = false
+
+# 国内镜像：默认走阿里云，比官方源快约十倍。
+# 以后在境外机器上用时，把下面这个 [[tool.uv.index]] 整段删掉即可。
+[[tool.uv.index]]
+name = "aliyun"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
+
+# PyTorch 从官方 CPU 索引装，避免拉几个 G 的 CUDA 依赖
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
