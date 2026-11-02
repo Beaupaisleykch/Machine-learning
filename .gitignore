@@ -260,3 +260,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- 个人学习进度与本地 AI 约定：只保留在本机 ----
+/CLAUDE.md
+/NOTES.md
+/ROADMAP.md
+/NOTES-archive.md
