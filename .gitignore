@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ---- Python ----
 __pycache__/
 *.py[cod]
@@ -48,17 +47,15 @@ Thumbs.db
 # ---- 自己的实验草稿 ----
 scratch/
 tmp/
-=======
+
+# ---- GitHub Python 通用规则 ----
 # Byte-compiled / optimized / DLL files
-__pycache__/
 *.py[codz]
 *$py.class
 
 # C extensions
-*.so
 
 # Distribution / packaging
-.Python
 build/
 develop-eggs/
 dist/
@@ -131,7 +128,6 @@ target/
 .ipynb_checkpoints
 
 # IPython
-profile_default/
 ipython_config.py
 
 # pyenv
@@ -154,8 +150,6 @@ ipython_config.py
 
 # poetry
 #   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
 # poetry.lock
 # poetry.toml
@@ -201,11 +195,8 @@ activemq-data/
 *.sage.py
 
 # Environments
-.env
-.envrc
 .venv
 env/
-venv/
 ENV/
 env.bak/
 venv.bak/
@@ -269,4 +260,3 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
->>>>>>> 4169eb59a14d2eda42ec5dde1f9d06ed87d79431
